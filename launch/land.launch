@@ -1,0 +1,17 @@
+<launch>
+	<arg name="x" default="0"/>
+	<arg name="y" default="0"/>
+	<arg name="z" default="0"/>
+	<arg name="nome" default="landingPID"/> 
+	<node 	
+		pkg="vant"
+		type="moveMarker"
+		name="movemarker"
+        args="$(arg x) $(arg y) $(arg z)"> 
+	</node> 
+	<node	
+		pkg="vant" 
+		type="$(arg nome)" 
+		name="controle">
+	</node>
+</launch>

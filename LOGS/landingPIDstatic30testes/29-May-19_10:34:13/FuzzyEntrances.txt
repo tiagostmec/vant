@@ -1,0 +1,4 @@
+[ENTRADA e SAIDA do Fuzzy do EDUARDO] [X Y  Vx Vy Vz]
+
+[
+]

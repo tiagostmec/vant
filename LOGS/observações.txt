@@ -1,0 +1,21 @@
+10 TESTES INICIAIS
+Não convergências - sem seekMarker:
+landingV5 = 1;
+landingV6: com boost
+	b=2 A=1 --> 0;
+	b=2 A=1.5 --> 0; possui um offset na hora do pouso
+landingV7: com pid
+	b=2 A=1 h=0 m=50 --> 0;	
+landingPID(1,1,0) = 1;
+landingPID(0.5,0.5,0.25) = 0;
+-----------------------------------
+Tempo medio de descida(s) e desvio padrão:
+landingV5 = 23.4 / 2.2706;
+landingV6:
+	b=2 A=1 --> 21.8 / 3.5839;
+	b=2 A=1.5 --> 21.5 / 3.2059;
+landingV7:
+	b=2 A=1 h=0 m=50--> 0;	
+landingPID(1,1,0) = 14.8 / 1.9322;
+landingPID(0.5,0.5,0.25) = 15.5 / 2.6352;
+-----------------------------------
